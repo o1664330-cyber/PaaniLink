@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone Officer | PaaniLink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="customer-body officer-page">
+
+    <main class="customer-main">
+
+     <h1 style="text-align: center; width: 100%; line-height: 1.4;">
+    💧 PaaniLink<br>Zone Officer<br>Dashboard
+</h1>
+        <section class="customer-section">
+            <h2>Welcome, Zone Officer</h2>
+         <p id="officerInfo" style="white-space: normal !important; overflow-wrap: anywhere; display: block; max-width: 100%;">Loading officer information...</p>
+        </section>
+
+        <section class="customer-section">
+            <h2>Bookings in My Zone</h2>
+<div class="table-container">
+            <table id="officerBookingTable">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Capacity</th>
+                        <th>Booking Type</th>
+                        <th>Address</th>
+                        <th>Zone</th>
+                        <th>Delivery Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="customer-section">
+            <h2>Subsidy Applications in My Zone</h2>
+  <div class="table-container">
+            <table id="officerSubsidyTable">
+                <thead>
+                    <tr>
+                        <th>Application ID</th>
+                        <th>Customer Name</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            </div>
+        </section>
+
+<!-- Customer Dispute Management -->
+<section class="customer-section">
+
+    <h2>⚠️ Customer Delivery Disputes</h2>
+
+    <p>Review delivery problems reported by customers in your zone.</p>
+
+    <div class="table-container">
+        <table id="officerDisputeTable">
+            <thead>
+                <tr>
+                    <th>Booking ID</th>
+                    <th>Customer Name</th>
+                    <th>Delivery Address</th>
+                    <th>Dispute Reason</th>
+                    <th>Dispute Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+    </div>
+
+</section>
+
+        <button onclick="logoutOfficer()">Logout</button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

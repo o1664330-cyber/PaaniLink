@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Driver Dashboard | PaaniLink</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="customer-body">
+
+    <main class="customer-main">
+
+     <h1 style="text-align: center; width: 100%; line-height: 1.4;">
+    🚚 PaaniLink - Driver Dashboard
+</h1>
+
+        <section class="customer-section">
+            <h2>Welcome, Driver</h2>
+            <p id="driverInfo">Loading driver information...</p>
+        </section>
+
+        <section class="customer-section">
+            <h2>My Assigned Trips</h2>
+
+            <table id="driverBookingTable">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Capacity</th>
+                        <th>Delivery Address</th>
+                        <th>Zone</th>
+                        <th>Delivery Date</th>
+                        <th>Trip Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <button onclick="logoutDriver()">Logout</button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

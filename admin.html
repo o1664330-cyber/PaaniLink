@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaaniLink - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>PaaniLink Admin Dashboard</h1>
+
+    <h2>Manage Customer Bookings</h2>
+<div class="table-container">
+    <table id="adminBookingTable">
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Capacity</th>
+                <th>Booking Type</th>
+                <th>Address</th>
+                <th>Zone</th>
+                <th>Delivery Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+
+
+<!-- TANKER MANAGEMENT -->
+<section class="admin-section">
+   <h2>🚛 Tanker Management</h2>
+
+<div class="table-container">
+    <table id="tankerTable">
+        <thead>
+            <tr>
+                <th>Tanker ID</th>
+                <th>Capacity</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="tankerTableBody">
+        </tbody>
+        </div>
+    </table>
+</section>
+
+<!-- DRIVER MANAGEMENT -->
+<section class="admin-section">
+    <h2>🚚 Driver Management</h2>
+
+    <h3>Add New Driver</h3>
+
+    <form id="driverForm">
+        <label>Driver Name</label>
+        <input
+            type="text"
+            id="driverName"
+            placeholder="Enter driver name"
+            required
+        >
+
+        <label>Phone Number</label>
+        <input
+            type="tel"
+            id="driverPhone"
+            placeholder="Enter phone number"
+            required
+        >
+
+        <button type="submit">Add Driver</button>
+    </form>
+
+    <h3>Registered Drivers</h3>
+<div class="table-container">
+    <table id="driverTable">
+        <thead>
+            <tr>
+                <th>Driver ID</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="driverTableBody">
+        </tbody>
+    </table>
+    </div>
+</section>
+
+<!-- HYDRANT MANAGEMENT -->
+<section class="admin-section">
+    <h2>💧 Hydrant Management</h2>
+
+    <h3>Add New Hydrant</h3>
+
+    <form id="hydrantForm">
+        <label>Hydrant Name</label>
+        <input
+            type="text"
+            id="hydrantName"
+            placeholder="Enter hydrant name"
+            required
+        >
+
+        <label>Location</label>
+        <input
+            type="text"
+            id="hydrantLocation"
+            placeholder="Enter hydrant location"
+            required
+        >
+
+        <button type="submit">Add Hydrant</button>
+    </form>
+
+    <h3>Registered Hydrants</h3>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Hydrant ID</th>
+                <th>Hydrant Name</th>
+                <th>Location</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="hydrantTableBody">
+        </tbody>
+    </table>
+    </div>
+</section>
+
+<!-- SUBSIDY MANAGEMENT -->
+<section class="admin-section">
+    <h2>💧 Subsidy Management</h2>
+
+    <h3>Customer Subsidy Applications</h3>
+<div class="table-container">
+    <table id="subsidyTable">
+        <thead>
+            <tr>
+                <th>Application ID</th>
+                <th>Customer Name</th>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="subsidyTableBody">
+        </tbody>
+    </table>
+    </div>
+</section>
+
+<!-- BILLING MANAGEMENT -->
+<section class="admin-section">
+    <h2>💰 Billing Management</h2>
+
+    <h3>Customer Bills</h3>
+<div class="table-container">
+    <table id="billTable">
+        <thead>
+            <tr>
+                <th>Bill ID</th>
+                <th>Customer Name</th>
+                <th>Booking ID</th>
+                <th>Amount (PKR)</th>
+                <th>Payment Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="billTableBody">
+        </tbody>
+    </table>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+   

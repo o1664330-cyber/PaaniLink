@@ -1,0 +1,176 @@
+{
+  "customers": [
+    {
+      "fullName": "ayesha",
+      "cnic": "12345-1234567-1",
+      "phone": "03001234567",
+      "email": "shaziashakeel653@gmail.com",
+      "address": "Zone A, Karachi",
+      "password": "1234567",
+      "id": "zxkMpdBdiCk"
+    }
+  ],
+  "bookings": [
+    {
+      "capacity": 1000,
+      "bookingType": "commercial",
+      "deliveryAddress": "dscdsv",
+      "zone": "Zone B",
+      "deliveryDate": "2026-11-18",
+      "status": "Approved",
+      "id": "6VLAF48-PV8"
+    },
+    {
+      "capacity": 1000,
+      "bookingType": "subsidised",
+      "deliveryAddress": "dscdsv",
+      "zone": "Zone C",
+      "deliveryDate": "2026-11-24",
+      "status": "Rejected",
+      "id": "ir7qfCSWCfs"
+    },
+    {
+      "capacity": 1000,
+      "bookingType": "commercial",
+      "deliveryAddress": "\tZone A, Karachi",
+      "zone": "Zone B",
+      "deliveryDate": "2026-12-08",
+      "status": "Approved",
+      "id": "Ua_FBlWTBl8"
+    },
+    {
+      "capacity": 1000,
+      "bookingType": "commercial",
+      "deliveryAddress": "\tZone A, Karachi",
+      "zone": "Zone A",
+      "deliveryDate": "2026-12-08",
+      "status": "Approved",
+      "id": "-Um7sRM_jpQ",
+      "customerId": "zxkMpdBdiCk",
+      "customerName": "ayesha",
+      "customerEmail": "shaziashakeel653@gmail.com",
+      "tankerId": "2",
+      "driverId": "-B9s2wTTx-k",
+      "driverName": "AYESHA",
+      "dispatchStatus": "Assigned",
+      "fillingStatus": "Filled",
+      "departureStatus": "Departed",
+      "tripStatus": "Delivered",
+      "failureReason": "",
+      "disputeStatus": "Resolved",
+      "disputeReason": "Water tanker was not delivered to my address.",
+      "resolvedBy": "Zone Officer A",
+      "deliveryConfirmation": "Confirmed"
+    },
+    {
+      "capacity": 1000,
+      "bookingType": "commercial",
+      "deliveryAddress": "\tZone A, Karachi",
+      "zone": "Zone A",
+      "deliveryDate": "2026-12-08",
+      "status": "Cancelled",
+      "customerId": "zxkMpdBdiCk",
+      "customerName": "ayesha",
+      "customerEmail": "shaziashakeel653@gmail.com",
+      "id": "yNXNl2R2zEc"
+    },
+    {
+      "capacity": 1000,
+      "bookingType": "commercial",
+      "deliveryAddress": "\tZone A, Karachi",
+      "zone": "Zone A",
+      "deliveryDate": "2026-12-23",
+      "status": "Approved",
+      "customerId": "zxkMpdBdiCk",
+      "customerName": "ayesha",
+      "customerEmail": "shaziashakeel653@gmail.com",
+      "id": "OTQojcsMJDQ"
+    }
+  ],
+  "tankers": [
+    {
+      "id": "1",
+      "capacity": 1000,
+      "status": "Available"
+    },
+    {
+      "id": "2",
+      "capacity": 3000,
+      "status": "Assigned"
+    },
+    {
+      "id": "3",
+      "capacity": 6000,
+      "status": "Available"
+    }
+  ],
+  "drivers": [
+    {
+      "name": "AYESHA",
+      "phone": "3234345R4",
+      "status": "Assigned",
+      "id": "-B9s2wTTx-k",
+      "email": "driver@paanilink.com",
+      "password": "driver123"
+    }
+  ],
+  "hydrants": [
+    {
+      "name": "Main Hydrant A",
+      "location": "ZONE A",
+      "status": "Available",
+      "id": "JxvkoXs9uug"
+    }
+  ],
+  "zones": [
+    {
+      "id": "1",
+      "name": "Zone A"
+    },
+    {
+      "id": "2",
+      "name": "Zone B"
+    },
+    {
+      "id": "3",
+      "name": "Zone C"
+    }
+  ],
+  "subsidies": [
+    {
+      "customerName": "Ali Ahmed",
+      "address": "Zone A, Karachi",
+      "status": "Approved",
+      "id": "3K9CTc_aZDs"
+    }
+  ],
+  "bills": [
+    {
+      "id": "BILL001",
+      "customerName": "Ali Ahmed",
+      "bookingId": "BOOK001",
+      "amount": 2500,
+      "paymentStatus": "Paid"
+    }
+  ],
+  "officers": [
+    {
+      "id": "OFF001",
+      "name": "Zone Officer A",
+      "email": "officer@paanilink.com",
+      "password": "officer123",
+      "zone": "Zone A",
+      "role": "officer"
+    }
+  ],
+  "operators": [
+    {
+      "id": "OP001",
+      "name": "Hydrant Operator A",
+      "email": "operator@paanilink.com",
+      "password": "operator123",
+      "hydrantId": "JxvkoXs9uug",
+      "role": "operator"
+    }
+  ]
+}

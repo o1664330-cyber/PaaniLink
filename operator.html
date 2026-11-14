@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hydrant Operator | PaaniLink</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="customer-body">
+
+    <main class="customer-main">
+
+      <h1 style="text-align: center; width: 100%; line-height: 1.4;">
+    💧 PaaniLink - Hydrant Operator Dashboard
+</h1>
+
+        <section class="customer-section">
+            <h2>Welcome, Hydrant Operator</h2>
+            <p id="operatorInfo">Loading operator information...</p>
+        </section>
+
+        <section class="customer-section">
+            <h2>My Hydrant</h2>
+
+            <table id="operatorHydrantTable">
+                <thead>
+                    <tr>
+                        <th>Hydrant ID</th>
+                        <th>Hydrant Name</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+       
+<section class="customer-section">
+    <h2>Approved Bookings</h2>
+
+    <table id="operatorBookingTable">
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Capacity</th>
+                <th>Address</th>
+                <th>Zone</th>
+                <th>Delivery Date</th>
+                <th>Status</th>
+                <th>Select Tanker</th>
+                <th>Select Driver</th>
+                <th>Action</th>
+                <th>Filling Status</th>
+                <th>Departure Status</th>
+            </tr>
+          
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
+
+
+        <section class="customer-section">
+            <h2>Assigned Tankers</h2>
+
+            <table id="operatorTankerTable">
+                <thead>
+                    <tr>
+                        <th>Tanker ID</th>
+                        <th>Capacity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <button onclick="logoutOperator()">Logout</button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
